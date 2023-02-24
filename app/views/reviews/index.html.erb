@@ -1,0 +1,8 @@
+<h1 class="mt-3">Reviews</h1>
+<% @restaurant.reviews.each do |review| %>
+  <div class="card p-3 mb-3">
+    <p><strong>Content:</strong></p>
+    <p><%= review.content %></p>
+    <p><strong>Rating: </strong><%= review.rating %>/5</p>
+  </div>
+<% end %>
